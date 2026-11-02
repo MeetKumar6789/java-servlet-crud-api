@@ -139,6 +139,27 @@ This project explores:
 - Add authentication and authorization.
 - Write automated API tests.
 
+## Limitations of Traditional Servlet Technology
+
+Working directly with Servlets provides flexibility but also introduces several challenges:
+
+- **Manual JSON Parsing:** Raw JSON request bodies must be read and deserialized explicitly using libraries such as Jackson or Gson.
+- **Manual Response Handling:** Developers must explicitly configure HTTP status codes using `setStatus()` and response types using `setContentType()`.
+- **Manual Response Generation:** JSON responses often require manually writing strings using `response.getWriter().write()`, making serialization and escaping difficult.
+- **Excessive Boilerplate:** URL mappings, request handling, validation, exception handling, and response generation require repetitive code.
+- **Hardcoded Logic:** Repeated status codes, response messages, and request-processing logic can make applications harder to maintain and scale.
+
+## Connection to Spring MVC
+
+These limitations highlight why higher-level frameworks like **Spring MVC** became popular. Spring MVC builds on the Servlet API and introduces a centralized **DispatcherServlet**, which acts as a Front Controller for incoming requests. It simplifies request routing, JSON serialization/deserialization, response handling, and controller development through annotations such as `@GetMapping`, `@PostMapping`, and `@RestController`.
+
+Understanding Servlets provides the foundation for understanding what Spring MVC handles behind the scenes.
+
+---
+
+**Built with Java, Jakarta Servlets, and curiosity.**
+
+
 ---
 
 **Built with Java, Jakarta Servlets, and curiosity.**
