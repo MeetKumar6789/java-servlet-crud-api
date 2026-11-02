@@ -159,7 +159,4 @@ Understanding Servlets provides the foundation for understanding what Spring MVC
 
 **Built with Java, Jakarta Servlets, and curiosity.**
 
-
----
-
-**Built with Java, Jakarta Servlets, and curiosity.**
+ 
